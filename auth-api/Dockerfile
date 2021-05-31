@@ -8,6 +8,7 @@ RUN apk --no-cache add curl git && \
 
 COPY . .
 
+RUN apk add build-base
 RUN dep ensure 
 RUN dep ensure -update golang.org/x/sys
 
